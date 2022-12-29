@@ -1,5 +1,4 @@
 # Personal Website
 
-Uses Simple.css.
+Uses <a href="https://watercss.kognise.dev">Water.css</a>
 
-*Copyright (c) 2020 Simple.css (Kev Quirk)*

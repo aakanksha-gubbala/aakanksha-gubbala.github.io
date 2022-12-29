@@ -5,37 +5,41 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-        <link rel="stylesheet" href="simple.css">
-        <link rel="stylesheet" href="custom.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.min.css">
 	</head>
 	<body>
         <header>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="https://github.com/aakanksha-gubbala/">Github</a>
-            </nav>
-            <h3>Aakanksha Gubbala</h3>
+            <h2>Aakanksha Gubbala</h2>
         </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="collect.html">Reading</a>
+            <a href="https://github.com/aakanksha-gubbala/">Github</a>
+        </nav>
         
         <h4>Old Projects</h4>
         
-        <article>
-            <h5>Analysis of binary vapour-liquid equilibria data from Dortmund Data Bank</h5>
+        <details>
+            <summary>Analysis of binary vapour-liquid equilibria data from Dortmund Data Bank</summary>
             <a href="https://chem-engg-tools.herokuapp.com/">chem-engg-tools.herokuapp.com</a>
             <p>This web application reads data from DDBST's collection of VLE data for 30 important compounds. Binary vapour-liquid equilibrium data of 30 Important Components from Dortmund Data Bank can be accessed from the web page. It correlates the isothermal data with Margules model, Redlich Kister (truncated to two terms), van Laar model and Wohl's expansion (truncated to one term). UNIQUAC model is implemented for isobaric data.</p>
-        </article>
+        </details>
         
-        <article>
-            <h5>Multivariable optimisation for design of STHEs</h5>
+        <details>
+            <summary>Multivariable optimisation for design of STHEs</summary>
             <a href="https://sthe-optimization.herokuapp.com/">sthe-optimization.herokuapp.com</a>
             <p>This website minimises the total annual cost of STHEs by carrying out a constrained discrete optimisation exercise to optimise seven key variables in design calculations.</p>
-        </article>
-        
-        <article>
-            <h5>Automating GROMACS with Python</h5>
+        </details>
+
+        <details>
+            <summary>Automating GROMACS with Python</summary>
             <a href="https://github.com/aakanksha-gubbala/gromacs-xtras">Github repository</a>
             <p>Tedious processes like energy minimisation involving iterative commands are automated using the subprocess module in python.</p>
-        </article>
+        </details>
+        
+        <footer>
+            <a href="#">Back to top ⬆</a>
+        </footer>
     </body>
 </html>
