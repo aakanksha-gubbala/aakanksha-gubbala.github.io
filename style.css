@@ -1,0 +1,70 @@
+/* Basic Reset */
+* {
+  font-family: Helvetica, sans-serif;
+  line-height: 1.6;
+  font-size: 1em;
+}
+
+body {
+  background-color:#fff; 
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+p.intro {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.head {
+  text-align: center;
+}
+
+.publication-list {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.publication {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.publication img, .publication gif {
+  max-width: 70px;
+  max-height: 70px;
+  margin-right: 10px;
+}
+.publication-title {
+  margin-bottom: 5px;
+}
+
+.publication-description {
+  font-size: 0.8em;
+}
+.publication-links a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+.publication-links a:hover {
+  text-decoration: underline;
+}
+.publication-number {
+  font-weight: bold;
+  margin-right: 10px;
+}
