@@ -2,7 +2,6 @@
 * {
   font-family: Helvetica, sans-serif;
   line-height: 1.6;
-  font-size: 1em;
 }
 
 body {
@@ -15,6 +14,12 @@ body {
 
 a {
   text-decoration: none;
+  color: blue;
+  font-size: 1em;
+}
+
+a:hover {
+  color: red;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,6 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 p.intro {
   margin-bottom: 1.5rem;
   text-align: center;
+  font-size: 1em;
 }
 
 .head {
@@ -35,36 +41,78 @@ p.intro {
   display: flex;
   flex-direction: column-reverse;
 }
+
 .publication {
   display: flex;
-  align-items: center;
+  display: flex;
+  align-items: flex-start;
   margin-bottom: 10px;
   background: #fff;
   padding: 5px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1em;
 }
+
 .publication img, .publication gif {
   max-width: 70px;
   max-height: 70px;
   margin-right: 10px;
 }
+
 .publication-title {
-  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 .publication-description {
+  margin: auto;
   font-size: 0.8em;
 }
-.publication-links a {
-  margin-right: 10px;
-  text-decoration: none;
-  color: #007bff;
+
+.publication-authors {
+  font-size: 0.9em;
 }
-.publication-links a:hover {
-  text-decoration: underline;
-}
+
 .publication-number {
   font-weight: bold;
   margin-right: 10px;
+  align-items: center;
+}
+
+/* Mobile view - when screen width is 768px or smaller */
+@media (max-width: 768px) {
+  .publication {
+      display: block;
+      text-align: center; 
+  }
+
+  .publication img {
+      display: block;
+      margin: 0 auto 1rem; 
+      max-width: 100%; 
+      height: auto;
+  }
+
+  .publication div {
+      text-align: left; 
+  }
+}
+
+/* Tag Filter Buttons */
+.tag-filter {
+  margin-bottom: 20px;
+}
+
+.tag {
+  padding: 5px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.tag.active {
+  background-color: #007bff;
+  color: white;
 }

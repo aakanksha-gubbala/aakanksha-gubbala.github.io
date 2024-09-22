@@ -17,6 +17,7 @@
                 [<a href="https://github.com/aakanksha-gubbala/">GitHub</a>]
                 [<a href="https://scholar.google.com/citations?hl=en&user=nWCv37AAAAAJ&view_op=list_works">Google Scholar</a>]
                 [<a href="files/cv.pdf">CV</a>]
+                [<a href="https://www.linkedin.com/in/aakanksha-gubbala/">LinkedIn</a>]
             </nav>
         </div>
 
@@ -25,38 +26,53 @@
         </p>     
 
         <h3 class="head" id="pubs">Publications</h3>
-        <div class="publication">
+        <!-- <div class="tag-filter">
+            <button class="tag" data-tag="active-matter">Active matter</button>
+            <button class="tag" data-tag="phase-field-modeling">Phase field modeling</button>
+            <button class="tag" data-tag="experiments">Experiments</button>
+        </div> -->
+
+        <article class="publication" data-tags="active-matter phase-field-modeling experiments">
             <span class="publication-number">2.</span>
             <img src="files/pre2024.gif" alt="PRE-2024">
             <div>
                 <div class="publication-title">
-                    <strong>Gubbala, A.</strong> (co-first), Arnold, D.P. (co-first), Jena, A., Anujarerat, S., Takatori, S.C. Dynamic swarms regulate the morphology and distribution of soft membrane domains
+                    Dynamic swarms regulate the morphology and distribution of soft membrane domains. <em>Phys. Rev. E. </em> (2024)
                 </div>
-                <div class="publication-links">
-                    <a href="https://arxiv.org/abs/2402.06518">arXiv</a>
-                    <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.110.014410">Journal</a>
+                <div class="publication-authors">
+                    <strong>Authors:</strong> Gubbala, A.</strong> (co-first), Arnold, D.P. (co-first), Jena, A., Anujarerat, S., Takatori, S.C.
                 </div>
-                <div class="publication-description">
-                    This paper investigates how lipid domain inclusions in a phase-separated lipid bilayer interact with a flowing F-actin, resulting in dynamic shapes and fragmentation of the domains. A phase-field model coupled with Toner-Tu equations reveals that these domains become entrained in chaotic flow patterns, oscillating in correlation with the flow’s dominant wavelengths.               
-                </div>
+                <nav class="publication-links">
+                    [<a href="https://arxiv.org/abs/2402.06518">arXiv</a>]
+                    [<a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.110.014410">Journal</a>]
+                </nav>
+                <p class="publication-description">
+                    This paper investigates how lipid domain inclusions in a phase-separated lipid bilayer interact with a flowing F-actin, resulting in dynamic shapes and fragmentation of the domains. A phase-field model coupled with Toner-Tu equations reveals that these domains become entrained in chaotic flow patterns, oscillating in correlation with the flow’s dominant wavelengths.  
+                </p>
             </div>
-        </div>
-    
-        <div class="publication">
+        </article>
+
+        <article class="publication" data-tags="phase-field-modeling experiments">
             <span class="publication-number">1.</span>
             <img src="files/prl2023.gif" alt="PRL-2023">
             <div>
                 <div class="publication-title">
-                    Arnold, D.P. (co-first), <strong>Gubbala, A.</strong> (co-first), Takatori, S.C. Active surface flows accelerate the coarsening of lipid membrane domains
+                    Active surface flows accelerate the coarsening of lipid membrane domains. 
+                    <em>Phys. Rev. Lett.</em> (2023)
                 </div>
-                <div class="publication-links">
-                    <a href="https://arxiv.org/abs/2306.00218">arXiv</a>
-                    <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.128402">Journal</a>
+                <div class="publication-authors">
+                    <strong>Authors:</strong> Arnold, D.P. (co-first), <strong>Gubbala, A.</strong> (co-first), Takatori, S.C.
                 </div>
-                <div class="publication-description">
+                <nav class="publication-links">
+                    [<a href="https://arxiv.org/abs/2306.00218">arXiv</a>]
+                    [<a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.128402">Journal</a>]
+                </nav>
+                <p class="publication-description">
                     This paper studies the coarsening of lipid membrane domains driven by active surface flows from motor-driven actin filaments. We find that these active flows accelerate domain growth, doubling the typical growth exponent compared to passive systems, and develop analytical models to explain the phenomenon.
-                </div>
+                </p>
             </div>
-        </div>
+        </article>
+
+        <script src="scripts.js"></script>
     </body>
 </html>
