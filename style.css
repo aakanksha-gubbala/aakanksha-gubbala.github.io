@@ -1,118 +1,156 @@
-/* Basic Reset */
+:root {
+    --text: #000000;
+    --muted: #545252;
+    --rule: #bbb;
+    --link: #0000ee;
+    --max-width: 1000px;
+}
+
 * {
-  font-family: Helvetica, sans-serif;
-  line-height: 1.6;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 17px;
 }
 
 body {
-  background-color:#fff; 
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 10%;
-  margin-right: 10%;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+
+    max-width: var(--max-width);
+
+    background: #ffffff;
+    color: var(--text);
+
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 432;
+    color: #111;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.35rem;
+    letter-spacing: 0.01em;
+}
+
+p {
+    text-align: justify;
+}
+
+strong {
+    font-weight: 600;
+}
+
+em {
+    font-style: italic;
+}
+
+.site-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 1.8rem;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.section-title::before,
+.section-title::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+}
+
+.skill-theme { margin-top: 1rem; margin-bottom: 1.5rem; }
+.skill-theme h4 { margin-bottom: 0.4rem; font-size: 0.95rem; }
+.skill-tag {
+  display: inline-block;
+  background: #eef2f7;
+  color: #1a2b4c;
+  padding: 0.25rem 0.7rem;
+  margin: 0.15rem 0.3rem 0.15rem 0;
+  border-radius: 999px;
+  font-size: 0.8rem;
 }
 
 a {
-  text-decoration: none;
-  color: blue;
-  font-size: 1em;
+    color: var(--link);
+    text-decoration: none;
 }
 
 a:hover {
-  color: red;
+    text-decoration: underline;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #000;
-  margin-bottom: 1rem;
+figure img {
+    display: block;
+    margin: auto;
+    width: 75%;
+    height: auto;
 }
 
-p.intro {
-  margin-bottom: 1.5rem;
-  text-align: center;
-  font-size: 1em;
+ul {
+    padding-left: 1.5rem;
 }
 
-.head {
-  text-align: center;
+
+footer {
+    margin-top: 5rem;
+
+    border-top: 1px solid var(--rule);
+    padding-top: 1rem;
+
+    color: var(--muted);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.75rem;
 }
 
-.publication-list {
-  display: flex;
-  flex-direction: column-reverse;
-}
+@media (max-width: 600px) {
+    html {
+        font-size: 16px;
+    }
 
-.publication {
-  display: flex;
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 10px;
-  background: #fff;
-  padding: 5px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-size: 1em;
-}
+    figure {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: auto;
+    }
 
-.publication img, .publication gif {
-  max-width: 70px;
-  max-height: 70px;
-  margin-right: 10px;
-}
+    body {
+        padding: 2rem 1.1rem 3rem;
+    }
 
-.publication-title {
-  font-weight: bold;
-  font-size: 1em;
-}
+    .site-header {
+        margin-bottom: 2rem;
+    }
 
-.publication-description {
-  margin: auto;
-  font-size: 0.8em;
-}
-
-.publication-authors {
-  font-size: 0.9em;
-}
-
-.publication-number {
-  font-weight: bold;
-  margin-right: 10px;
-  align-items: center;
-}
-
-/* Mobile view - when screen width is 768px or smaller */
-@media (max-width: 768px) {
-  .publication {
-      display: block;
-      text-align: center; 
-  }
-
-  .publication img {
-      display: block;
-      margin: 0 auto 1rem; 
-      max-width: 100%; 
-      height: auto;
-  }
-
-  .publication div {
-      text-align: left; 
-  }
-}
-
-/* Tag Filter Buttons */
-.tag-filter {
-  margin-bottom: 20px;
-}
-
-.tag {
-  padding: 5px;
-  background-color: #ddd;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.tag.active {
-  background-color: #007bff;
-  color: white;
+    section {
+        margin-bottom: 3rem;
+    }
 }

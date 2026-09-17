@@ -1,69 +1,116 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Aakanksha Gubbala</title>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-        <link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-        <div class="head">
-            <header>
-                <h2>Aakanksha Gubbala</h2>
-            </header>
-            <nav>
-                [<a href="https://github.com/aakanksha-gubbala/">GitHub</a>]
-                [<a href="https://scholar.google.com/citations?hl=en&user=nWCv37AAAAAJ&view_op=list_works">Google Scholar</a>]
-                [<a href="https://www.linkedin.com/in/aakanksha-gubbala/">LinkedIn</a>]
-            </nav>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Aakanksha Gubbala</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+            svg: {
+                fontCache: 'global',
+                scale: 1.05
+            },
+            options: {
+                renderActions: {
+                    addMenu: []
+                }
+            }
+        };
+    </script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"
+        defer>
+    </script>
+</head>
+
+<body>
+
+<header class="site-header">
+    <h1>Aakanksha Gubbala</h1>
+</header>
+
+<main>
+
+    <section id="about">
+        <div class="section-title">
+            <span>About</span>
         </div>
 
-        <p class="intro">
-            PhD Candidate in Chemical Engineering using theory & computation to study soft-condensed matter.
-        </p>     
+        <div>
+            <p>
+                I am a PhD candidate in chemical engineering at Stanford University. I am interested in developing low-dimensional equations that bridge microscopic interactions and macroscopic behavior of systems with large numbers of particles. I apply this approach to study soft materials, such as colloids, foams, polymers, liquid crystals, and multiphase systems.
+            </p>
 
-        <h3 class="head" id="pubs">Publications</h3>
+            <p>
+                <strong>Links:</strong>
+                <a href="https://scholar.google.com/citations?hl=en&user=nWCv37AAAAAJ&view_op=list_works">Google Scholar</a> | 
+                <a href="https://github.com/aakanksha-gubbala/">GitHub</a>
+                <br>
+                <strong>Contact:</strong>
+                agubbala [at] stanford [dot] edu
+            </p>
+        </div>
+    </section>
 
-        <article class="publication">
-            <span class="publication-number">2.</span>
-            <img src="files/pre2024.gif" alt="PRE-2024">
-            <div>
-                <div class="publication-title">
-                    Dynamic swarms regulate the morphology and distribution of soft membrane domains. <em>Phys. Rev. E. </em> (2024)
-                </div>
-                <div class="publication-authors">
-                    <em>Authors:</em> <strong>Gubbala, A.</strong> (co-first), Arnold, D.P. (co-first), Jena, A., Anujarerat, S., Takatori, S.C.
-                </div>
-                <nav class="publication-links">
-                    [<a href="https://arxiv.org/abs/2402.06518">arXiv</a>]
-                    [<a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.110.014410">Journal</a>]
-                </nav>
-                <p class="publication-description">
-                    This paper investigates how lipid domain inclusions in a phase-separated lipid bilayer interact with a flowing F-actin, resulting in dynamic shapes and fragmentation of the domains. A phase-field model coupled with Toner-Tu equations reveals that these domains become entrained in chaotic flow patterns, oscillating in correlation with the flow’s dominant wavelengths.  
-                </p>
-            </div>
-        </article>
 
-        <article class="publication">
-            <span class="publication-number">1.</span>
-            <img src="files/prl2023.gif" alt="PRL-2023">
-            <div>
-                <div class="publication-title">
-                    Active surface flows accelerate the coarsening of lipid membrane domains. 
-                    <em>Phys. Rev. Lett.</em> (2023)
-                </div>
-                <div class="publication-authors">
-                    <em>Authors:</em> Arnold, D.P. (co-first), <strong>Gubbala, A.</strong> (co-first), Takatori, S.C.
-                </div>
-                <nav class="publication-links">
-                    [<a href="https://arxiv.org/abs/2306.00218">arXiv</a>]
-                    [<a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.128402">Journal</a>]
-                </nav>
-                <p class="publication-description">
-                    This paper studies the coarsening of lipid membrane domains driven by active surface flows from motor-driven actin filaments. We find that these active flows accelerate domain growth, doubling the typical growth exponent compared to passive systems, and develop analytical models to explain the phenomenon.
-                </p>
-            </div>
-        </article>
-    </body>
+    <section id="research">
+        <div class="section-title">
+            <span>Research themes</span>
+        </div>
+
+        <h3>Coarse-graining</h3>
+
+        <p>
+            A key challenge in coarse-graining (systematically reducing the degrees of freedom of a large system) is developing a low-dimensional equation that <i>effectively</i> captures the complexities of the underlying dynamics. In the last stretch of my dissertation, I am exploring how modern machine learning algorithms can inform the design of such equations, particularly in regimes that are difficult to tackle using classical approaches alone.
+        </p>
+
+        <figure>
+            <img src="figures/coarse-graining.svg" alt="coarse graining">
+        </figure>
+
+        <div class="skill-theme">
+            <i>Keywords</i>: 
+            <span class="skill-tag">Molecular dynamics</span>
+            <span class="skill-tag">Statistical mechanics</span>
+            <span class="skill-tag">High-performance computing</span>
+            <span class="skill-tag">Transformers</span>
+            <span class="skill-tag">Generative modeling</span>
+        </div>
+
+        <h3>Multiphase systems</h3>
+
+        <p>
+            Using field-theoretic methods, I studied liquid-liquid phase-separation (where the minority phase nucleates into spherical droplets that grow slowly over time) in different complex fluid backgrounds. If the background is an <i>active fluid</i>, such as bacterial suspensions that are turbulent at low Reynolds numbers, I examined how such unusual mixing affects the droplet size and structure. If the background is an an <i>anisotropic elastic fluid</i>, modeled using liquid crystals to capture fibrous media, I examined how the elasticity of the background reshapes and compresses the growing droplets.
+        </p>
+
+        <figure>
+            <img src="figures/field-theory.svg" alt="field theory">
+        </figure>
+
+        <div class="skill-theme">
+            <i>Keywords</i>: 
+            <span class="skill-tag">Interfacial science</span>
+            <span class="skill-tag">Continuum mechanics</span>
+            <span class="skill-tag">Turbulence</span>
+            <span class="skill-tag">Liquid crystals</span>
+            <span class="skill-tag">Pseudospectral methods</span>
+            <span class="skill-tag">Level set methods</span>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>Aakanksha Gubbala | Updated 9/26</p>
+</footer>
+
+</body>
 </html>
